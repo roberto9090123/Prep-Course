@@ -9,16 +9,16 @@ function crearUsuario() {
   // Devuelve la clase
   // Tu código:
   class usuario {
-    constructor(opciones){
+    constructor(opciones) {
       this.usuario = opciones.usuario;
       this.nombre = opciones.nombre;
       this.email = opciones.email;
-      this.pasword = opciones.pasword;
+      this.password = opciones.password;
     }
-    saludar(){
-      return 'Hola, mi nombre es' + this.nombre;
+    saludar() {
+      return 'Hola, mi nombre es ' + this.nombre;
     }
-  } 
+  }
   return usuario;
 }
 
