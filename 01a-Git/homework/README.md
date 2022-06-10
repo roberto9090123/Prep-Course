@@ -72,7 +72,7 @@ En la nueva pantalla, vas a tener que seleccionar el nombre de tu nuevo repo. Cr
 
 ![alt](../img/create-repository-name.png)
 
-Luego elegí la visibilidad del proyecto como público (para tener repos privados tenes que pagar el premium de github).
+Luego elegí la visibilidad del proyecto como cpúblico (para tener repos privados tenes que pagar el premium de github).
 
 Por último haz clic en **Crear repositorio**.
 
@@ -105,7 +105,7 @@ A continuación, escribe lo siguiente en tu terminal:
 
 ```bash
   $ cd repositorio-henry
-  
+
   $ touch archivo-ejemplo.js
 ```
 
@@ -139,7 +139,7 @@ Esto nos dice que tenemos un archivo que ha cambiado, pero todavía no ha sido g
 Para hacer esto, usaremos el comando "add":
 
 
-```bash
+```bashs
   git add archivo-ejemplo.js
 ```
 
