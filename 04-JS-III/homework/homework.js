@@ -126,13 +126,9 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-  var respuesta;
-  for(let i = 0 ; i<arreglo.length; i++){
-    if(arreglo[i]>19){
-      respuesta=respuesta+1;
-    }return respuesta;
-  }
-
+  var respuesta = 0;
+  for(i = 0; i < arreglo.length; i++) {if (arreglo[i]>18) {respuesta = respuesta+1}; ;}
+  return respuesta;
 }
 
 
@@ -142,10 +138,8 @@ function diaDeLaSemana(numeroDeDia) {
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
   if(numeroDeDia ==1 || numeroDeDia == 7){
-    console.log('Es fin de semana')
-  }else{
-    console.log('Es dia Laboral')
-  }
+    return'Es fin de semana'
+  };return 'Es dia Laboral'
 } 
 
 
@@ -168,14 +162,12 @@ function todosIguales(arreglo) {
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
   
-  for(let i=0; i<arreglo.length ; i++){
-    if(arreglo[i] === arreglo[i]){
-      return true;
-    }else{
-      return false;
-    }
-  }
-} 
+  var respuesta = arreglo[0];
+  for(i=1;i<arreglo.length;i++)
+  {if (respuesta !== arreglo[i]) {break;} respuesta = arreglo[i];
+return true}
+return false
+}
 
 
 function mesesDelAño(array) {
@@ -183,14 +175,11 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-  var meses= [];
-  for(let i= 0 ; i< array.length;i++){
-    if(array[i]=== 'Enero' || array[i] === 'Marzo' || array[Noviembre] === 'Noviembre'){
-      meses.push(array[i]);
-    }if(array[i]<3){
-      console.log('No se encontraron los meses perdidos ');
-    }
-  }
+  var meses = [];
+  for(i=0;i<array.length;i++)
+  {if (array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") {meses.push(array[i])}; ;}
+  if (meses.length < 3) {return "No se encontraron los meses pedidos"};
+  return meses;
 }
 
 
@@ -200,7 +189,7 @@ function mayorACien(array) {
   // Tu código:
   var enteros = [];
   for(let i= 0; i < array.length ; i++){
-    if(array[i]>100 || array[i]<=200){
+    if(array[i]>100){
       enteros.push(array[i])
     }
   }return enteros
