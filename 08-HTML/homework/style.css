@@ -1,0 +1,27 @@
+body{
+    background: url(https://previews.123rf.com/images/pashabo/pashabo1008/pashabo100800191/7601711-grunge-frotada-serie-de-bandera-de-fondos-per%C3%BA-.jpg);
+}
+.divClass{
+    display:grid; 
+    justify-content: center;
+    margin-top:10px;
+    text-align: center;
+}
+h1{
+    color: royalblue;
+}
+img{
+    width: 400px;
+}
+#thirdDiv{
+    height: 600px;
+    width: 500px;
+    background-color: azure;
+    padding: 50px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+#spanId{
+    font-size: 18px;
+    margin: 50px;
+}
