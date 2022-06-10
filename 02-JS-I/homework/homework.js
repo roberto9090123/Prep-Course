@@ -72,11 +72,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.legth === str2.legth) {
-    return true;
-  } else {
-    return false;
-  }
+  if (str1.length === str2.length) {return true;} return false;
 }
 
 function menosQueNoventa(num) {
@@ -172,9 +168,9 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero>0) {
-    alert("es positivo");
+    return"Es positivo" ;
   } else if (numero<0) {
-    alert("es negativo");
+    return"Es negativo";
   } else if(numero==0){
     return false;
   }
@@ -198,7 +194,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'Hola ' + nombre
+  return 'Hola ' + nombre + '!'
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
