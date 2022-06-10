@@ -9,8 +9,8 @@ function crearGato (nombre, edad) {
   var nuevoObjeto = {
     nombre: nombre,
     edad: edad,
-    Meow: function(){
-      return('Meow')
+    meow: function(){
+      return('Meow!')
     }
   };
   return nuevoObjeto;
@@ -90,10 +90,10 @@ function verificarPassword (usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(usuario['password'=== password]){
+  if (usuario['password'] === password) {
     return true;
-  }else{
-    return falses;
+  } else {
+    return false;
   }
 }
 
@@ -149,10 +149,10 @@ function agregarMetodoCalculoDescuento (producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-  producto.calcularPrecioDescuento = function(){
-    return this.precio - (this.precio * this.calcularPrecioDescuento);
-  };
-  return producto;
+  producto.calcularPrecioDescuento = function () {
+    return this.precio - (this.precio * this.porcentajeDeDescuento);
+};
+return producto;
 }
 
 // No modificar nada debajo de esta línea
